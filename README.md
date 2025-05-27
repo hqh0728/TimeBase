@@ -101,7 +101,7 @@ If you find this project helpful, please cite us:
 
 We would like to thank the authors of the following open-source projects for their valuable contributions, which provides significant help for our work:
 
-- [**SparseTSF** (ICML 2025)](https://github.com/lss-1138/SparseTSF)
+- [**SparseTSF** (ICML 2024)](https://github.com/lss-1138/SparseTSF)
 - [**PatchTST** (ICLR 2023)](https://github.com/yuqinie98/PatchTST)
 - [**TFB** (VLDB 2024)](https://github.com/decisionintelligence/TFB)
 - [**Time-Series-Library** (THUML)](https://github.com/thuml/Time-Series-Library)
