@@ -1,0 +1,449 @@
+Args in experiment:
+Namespace(random_seed=2021, is_training=1, model_id='720_96', model='PatchTST', data='custom', root_path='./dataset/', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=720, label_len=48, pred_len=96, fc_dropout=0.2, head_dropout=0.0, patch_len=16, stride=8, padding_patch='end', revin=1, affine=0, subtract_last=0, decomposition=0, kernel_size=25, individual=0, embed_type=0, enc_in=321, dec_in=7, c_out=7, d_model=128, n_heads=16, e_layers=3, d_layers=1, d_ff=256, moving_avg=25, factor=1, distil=True, dropout=0.2, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=30, batch_size=8, patience=5, learning_rate=0.0001, des='Exp', loss='mse', lradj='TST', pct_start=0.2, use_amp=False, use_gpu=True, gpu=6, use_multi_gpu=False, devices='0,1,2,3', test_flop=False)
+Use GPU: cuda:6
+[INFO] Register count_linear() for <class 'torch.nn.modules.linear.Linear'>.
+[INFO] Register zero_ops() for <class 'torch.nn.modules.dropout.Dropout'>.
+[INFO] Register zero_ops() for <class 'torch.nn.modules.container.Sequential'>.
+[INFO] Register count_normalization() for <class 'torch.nn.modules.batchnorm.BatchNorm1d'>.
+MACs: 11862927360.0
+Params: 1505632.0
+11.86G MACs
+>>>>>>>start training : 720_96_PatchTST_custom_ftM_sl720_ll48_pl96_dm128_nh16_el3_dl1_df256_fc1_ebtimeF_dtTrue_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 17597
+val 2537
+test 5165
+	iters: 100, epoch: 1 | loss: 0.4677514
+	speed: 0.2607s/iter; left time: 17180.5850s
+	iters: 200, epoch: 1 | loss: 0.3451530
+	speed: 0.2562s/iter; left time: 16858.1860s
+	iters: 300, epoch: 1 | loss: 0.3127469
+	speed: 0.2560s/iter; left time: 16821.2219s
+	iters: 400, epoch: 1 | loss: 0.2852659
+	speed: 0.2562s/iter; left time: 16806.2238s
+	iters: 500, epoch: 1 | loss: 0.2561320
+	speed: 0.2561s/iter; left time: 16775.5633s
+	iters: 600, epoch: 1 | loss: 0.2493719
+	speed: 0.2557s/iter; left time: 16725.2617s
+	iters: 700, epoch: 1 | loss: 0.2966246
+	speed: 0.2564s/iter; left time: 16743.0655s
+	iters: 800, epoch: 1 | loss: 0.2135929
+	speed: 0.2559s/iter; left time: 16682.3448s
+	iters: 900, epoch: 1 | loss: 0.2718150
+	speed: 0.2558s/iter; left time: 16653.6025s
+	iters: 1000, epoch: 1 | loss: 0.2229163
+	speed: 0.2563s/iter; left time: 16658.6402s
+	iters: 1100, epoch: 1 | loss: 0.2096755
+	speed: 0.2557s/iter; left time: 16596.4533s
+	iters: 1200, epoch: 1 | loss: 0.1922892
+	speed: 0.2560s/iter; left time: 16588.4505s
+	iters: 1300, epoch: 1 | loss: 0.2477047
+	speed: 0.2564s/iter; left time: 16587.1764s
+	iters: 1400, epoch: 1 | loss: 0.1656274
+	speed: 0.2561s/iter; left time: 16541.6582s
+	iters: 1500, epoch: 1 | loss: 0.1850311
+	speed: 0.2559s/iter; left time: 16505.4083s
+	iters: 1600, epoch: 1 | loss: 0.1669123
+	speed: 0.2567s/iter; left time: 16531.1557s
+	iters: 1700, epoch: 1 | loss: 0.1846450
+	speed: 0.2557s/iter; left time: 16443.0565s
+	iters: 1800, epoch: 1 | loss: 0.1461779
+	speed: 0.2564s/iter; left time: 16458.0294s
+	iters: 1900, epoch: 1 | loss: 0.1695979
+	speed: 0.2556s/iter; left time: 16386.6089s
+	iters: 2000, epoch: 1 | loss: 0.2017546
+	speed: 0.2555s/iter; left time: 16354.7287s
+	iters: 2100, epoch: 1 | loss: 0.1723724
+	speed: 0.2563s/iter; left time: 16377.5916s
+	iters: 2200, epoch: 1 | loss: 0.1770329
+	speed: 0.2556s/iter; left time: 16305.6390s
+Epoch: 1 cost time: 563.8225626945496
+Epoch: 1, Steps: 2200 | Train Loss: 0.2429711 Vali Loss: 0.1242539 Test Loss: 0.1456708
+Validation loss decreased (inf --> 0.124254).  Saving model ...
+Updating learning rate to 1.0431732720955262e-05
+	iters: 100, epoch: 2 | loss: 0.2911242
+	speed: 1.3062s/iter; left time: 83203.8539s
+	iters: 200, epoch: 2 | loss: 0.1616275
+	speed: 0.2564s/iter; left time: 16305.9678s
+	iters: 300, epoch: 2 | loss: 0.2000377
+	speed: 0.2560s/iter; left time: 16253.6979s
+	iters: 400, epoch: 2 | loss: 0.1649853
+	speed: 0.2554s/iter; left time: 16195.5432s
+	iters: 500, epoch: 2 | loss: 0.1692779
+	speed: 0.2546s/iter; left time: 16114.0600s
+	iters: 600, epoch: 2 | loss: 0.1338236
+	speed: 0.2556s/iter; left time: 16152.5905s
+	iters: 700, epoch: 2 | loss: 0.2167492
+	speed: 0.2561s/iter; left time: 16160.0114s
+	iters: 800, epoch: 2 | loss: 0.1621376
+	speed: 0.2556s/iter; left time: 16103.7090s
+	iters: 900, epoch: 2 | loss: 0.1336272
+	speed: 0.2554s/iter; left time: 16062.4932s
+	iters: 1000, epoch: 2 | loss: 0.2079802
+	speed: 0.2561s/iter; left time: 16080.3503s
+	iters: 1100, epoch: 2 | loss: 0.1670420
+	speed: 0.2557s/iter; left time: 16032.5174s
+	iters: 1200, epoch: 2 | loss: 0.1497199
+	speed: 0.2554s/iter; left time: 15990.3118s
+	iters: 1300, epoch: 2 | loss: 0.1460157
+	speed: 0.2555s/iter; left time: 15966.7777s
+	iters: 1400, epoch: 2 | loss: 0.2009458
+	speed: 0.2555s/iter; left time: 15941.1654s
+	iters: 1500, epoch: 2 | loss: 0.1645431
+	speed: 0.2551s/iter; left time: 15894.4611s
+	iters: 1600, epoch: 2 | loss: 0.1540358
+	speed: 0.2555s/iter; left time: 15892.8849s
+	iters: 1700, epoch: 2 | loss: 0.2108167
+	speed: 0.2555s/iter; left time: 15869.4934s
+	iters: 1800, epoch: 2 | loss: 0.1374503
+	speed: 0.2559s/iter; left time: 15865.4075s
+	iters: 1900, epoch: 2 | loss: 0.1523177
+	speed: 0.2558s/iter; left time: 15832.0881s
+	iters: 2000, epoch: 2 | loss: 0.1302225
+	speed: 0.2554s/iter; left time: 15782.4402s
+	iters: 2100, epoch: 2 | loss: 0.1789738
+	speed: 0.2553s/iter; left time: 15752.3696s
+	iters: 2200, epoch: 2 | loss: 0.1609528
+	speed: 0.2553s/iter; left time: 15725.6371s
+Epoch: 2 cost time: 562.9271705150604
+Epoch: 2, Steps: 2200 | Train Loss: 0.1650894 Vali Loss: 0.1215257 Test Loss: 0.1432928
+Validation loss decreased (0.124254 --> 0.121526).  Saving model ...
+Updating learning rate to 2.8003298142412393e-05
+	iters: 100, epoch: 3 | loss: 0.1353975
+	speed: 1.3055s/iter; left time: 80287.1463s
+	iters: 200, epoch: 3 | loss: 0.1991029
+	speed: 0.2554s/iter; left time: 15683.9167s
+	iters: 300, epoch: 3 | loss: 0.1599838
+	speed: 0.2556s/iter; left time: 15669.8084s
+	iters: 400, epoch: 3 | loss: 0.1531407
+	speed: 0.2554s/iter; left time: 15628.2100s
+	iters: 500, epoch: 3 | loss: 0.1596104
+	speed: 0.2555s/iter; left time: 15614.1916s
+	iters: 600, epoch: 3 | loss: 0.1779706
+	speed: 0.2556s/iter; left time: 15590.9301s
+	iters: 700, epoch: 3 | loss: 0.1524476
+	speed: 0.2558s/iter; left time: 15578.1785s
+	iters: 800, epoch: 3 | loss: 0.1468606
+	speed: 0.2551s/iter; left time: 15508.2294s
+	iters: 900, epoch: 3 | loss: 0.1861770
+	speed: 0.2559s/iter; left time: 15533.7514s
+	iters: 1000, epoch: 3 | loss: 0.1476485
+	speed: 0.2542s/iter; left time: 15406.8958s
+	iters: 1100, epoch: 3 | loss: 0.1544775
+	speed: 0.2539s/iter; left time: 15359.2141s
+	iters: 1200, epoch: 3 | loss: 0.1782148
+	speed: 0.2550s/iter; left time: 15399.9581s
+	iters: 1300, epoch: 3 | loss: 0.1978049
+	speed: 0.2553s/iter; left time: 15397.7693s
+	iters: 1400, epoch: 3 | loss: 0.1338948
+	speed: 0.2551s/iter; left time: 15360.1213s
+	iters: 1500, epoch: 3 | loss: 0.1432981
+	speed: 0.2552s/iter; left time: 15338.8376s
+	iters: 1600, epoch: 3 | loss: 0.1556698
+	speed: 0.2549s/iter; left time: 15293.5884s
+	iters: 1700, epoch: 3 | loss: 0.1680671
+	speed: 0.2552s/iter; left time: 15285.2519s
+	iters: 1800, epoch: 3 | loss: 0.1344734
+	speed: 0.2555s/iter; left time: 15281.8687s
+	iters: 1900, epoch: 3 | loss: 0.1301155
+	speed: 0.2552s/iter; left time: 15238.6547s
+	iters: 2000, epoch: 3 | loss: 0.1496311
+	speed: 0.2557s/iter; left time: 15241.2617s
+	iters: 2100, epoch: 3 | loss: 0.1646558
+	speed: 0.2550s/iter; left time: 15174.4700s
+	iters: 2200, epoch: 3 | loss: 0.2593483
+	speed: 0.2554s/iter; left time: 15169.4526s
+Epoch: 3 cost time: 562.3146078586578
+Epoch: 3, Steps: 2200 | Train Loss: 0.1566040 Vali Loss: 0.1180848 Test Loss: 0.1395512
+Validation loss decreased (0.121526 --> 0.118085).  Saving model ...
+Updating learning rate to 5.200571241938846e-05
+	iters: 100, epoch: 4 | loss: 0.1550068
+	speed: 1.2904s/iter; left time: 76524.7528s
+	iters: 200, epoch: 4 | loss: 0.2400769
+	speed: 0.2555s/iter; left time: 15123.2162s
+	iters: 300, epoch: 4 | loss: 0.1530967
+	speed: 0.2557s/iter; left time: 15113.1596s
+	iters: 400, epoch: 4 | loss: 0.1400822
+	speed: 0.2558s/iter; left time: 15094.7356s
+	iters: 500, epoch: 4 | loss: 0.1515630
+	speed: 0.2554s/iter; left time: 15041.4696s
+	iters: 600, epoch: 4 | loss: 0.1458196
+	speed: 0.2554s/iter; left time: 15020.5740s
+	iters: 700, epoch: 4 | loss: 0.1670689
+	speed: 0.2557s/iter; left time: 15010.6108s
+	iters: 800, epoch: 4 | loss: 0.1398960
+	speed: 0.2558s/iter; left time: 14992.3176s
+	iters: 900, epoch: 4 | loss: 0.1323831
+	speed: 0.2553s/iter; left time: 14936.0645s
+	iters: 1000, epoch: 4 | loss: 0.1573813
+	speed: 0.2553s/iter; left time: 14907.5051s
+	iters: 1100, epoch: 4 | loss: 0.2079756
+	speed: 0.2550s/iter; left time: 14867.0180s
+	iters: 1200, epoch: 4 | loss: 0.1156698
+	speed: 0.2555s/iter; left time: 14871.3802s
+	iters: 1300, epoch: 4 | loss: 0.1698949
+	speed: 0.2553s/iter; left time: 14835.1034s
+	iters: 1400, epoch: 4 | loss: 0.1283168
+	speed: 0.2557s/iter; left time: 14829.2420s
+	iters: 1500, epoch: 4 | loss: 0.1363728
+	speed: 0.2554s/iter; left time: 14789.9875s
+	iters: 1600, epoch: 4 | loss: 0.1473461
+	speed: 0.2558s/iter; left time: 14785.8787s
+	iters: 1700, epoch: 4 | loss: 0.1954423
+	speed: 0.2556s/iter; left time: 14746.5749s
+	iters: 1800, epoch: 4 | loss: 0.1180620
+	speed: 0.2552s/iter; left time: 14697.7059s
+	iters: 1900, epoch: 4 | loss: 0.1752974
+	speed: 0.2557s/iter; left time: 14705.5958s
+	iters: 2000, epoch: 4 | loss: 0.1468029
+	speed: 0.2556s/iter; left time: 14672.5729s
+	iters: 2100, epoch: 4 | loss: 0.1663359
+	speed: 0.2554s/iter; left time: 14633.4596s
+	iters: 2200, epoch: 4 | loss: 0.1171485
+	speed: 0.2554s/iter; left time: 14609.6188s
+Epoch: 4 cost time: 562.8206045627594
+Epoch: 4, Steps: 2200 | Train Loss: 0.1520690 Vali Loss: 0.1172243 Test Loss: 0.1408412
+Validation loss decreased (0.118085 --> 0.117224).  Saving model ...
+Updating learning rate to 7.600659583158548e-05
+	iters: 100, epoch: 5 | loss: 0.1549952
+	speed: 1.3022s/iter; left time: 74359.7271s
+	iters: 200, epoch: 5 | loss: 0.1348430
+	speed: 0.2551s/iter; left time: 14540.4027s
+	iters: 300, epoch: 5 | loss: 0.1520290
+	speed: 0.2554s/iter; left time: 14532.2346s
+	iters: 400, epoch: 5 | loss: 0.1413717
+	speed: 0.2555s/iter; left time: 14513.7799s
+	iters: 500, epoch: 5 | loss: 0.1354607
+	speed: 0.2558s/iter; left time: 14502.0972s
+	iters: 600, epoch: 5 | loss: 0.1512451
+	speed: 0.2555s/iter; left time: 14463.3420s
+	iters: 700, epoch: 5 | loss: 0.1315016
+	speed: 0.2555s/iter; left time: 14435.9858s
+	iters: 800, epoch: 5 | loss: 0.1437758
+	speed: 0.2557s/iter; left time: 14420.2194s
+	iters: 900, epoch: 5 | loss: 0.1439444
+	speed: 0.2558s/iter; left time: 14402.2614s
+	iters: 1000, epoch: 5 | loss: 0.1287711
+	speed: 0.2558s/iter; left time: 14374.8904s
+	iters: 1100, epoch: 5 | loss: 0.1431316
+	speed: 0.2556s/iter; left time: 14341.9205s
+	iters: 1200, epoch: 5 | loss: 0.1252557
+	speed: 0.2552s/iter; left time: 14289.0582s
+	iters: 1300, epoch: 5 | loss: 0.1483969
+	speed: 0.2556s/iter; left time: 14288.9213s
+	iters: 1400, epoch: 5 | loss: 0.1237830
+	speed: 0.2553s/iter; left time: 14245.6026s
+	iters: 1500, epoch: 5 | loss: 0.1618727
+	speed: 0.2556s/iter; left time: 14238.2971s
+	iters: 1600, epoch: 5 | loss: 0.1473044
+	speed: 0.2553s/iter; left time: 14196.2315s
+	iters: 1700, epoch: 5 | loss: 0.1655287
+	speed: 0.2551s/iter; left time: 14156.5012s
+	iters: 1800, epoch: 5 | loss: 0.1285591
+	speed: 0.2562s/iter; left time: 14195.1769s
+	iters: 1900, epoch: 5 | loss: 0.1531010
+	speed: 0.2554s/iter; left time: 14125.3638s
+	iters: 2000, epoch: 5 | loss: 0.1719328
+	speed: 0.2555s/iter; left time: 14101.5985s
+	iters: 2100, epoch: 5 | loss: 0.1622482
+	speed: 0.2558s/iter; left time: 14096.9579s
+	iters: 2200, epoch: 5 | loss: 0.1899283
+	speed: 0.2548s/iter; left time: 14016.5008s
+Epoch: 5 cost time: 562.7563517093658
+Epoch: 5, Steps: 2200 | Train Loss: 0.1482408 Vali Loss: 0.1223006 Test Loss: 0.1414246
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 9.357397891341767e-05
+	iters: 100, epoch: 6 | loss: 0.1295479
+	speed: 1.3478s/iter; left time: 73993.9099s
+	iters: 200, epoch: 6 | loss: 0.1699813
+	speed: 0.2579s/iter; left time: 14134.0709s
+	iters: 300, epoch: 6 | loss: 0.1390049
+	speed: 0.2574s/iter; left time: 14077.6667s
+	iters: 400, epoch: 6 | loss: 0.1318334
+	speed: 0.2566s/iter; left time: 14009.6796s
+	iters: 500, epoch: 6 | loss: 0.1349063
+	speed: 0.2563s/iter; left time: 13970.4241s
+	iters: 600, epoch: 6 | loss: 0.2259969
+	speed: 0.2564s/iter; left time: 13950.0345s
+	iters: 700, epoch: 6 | loss: 0.1306932
+	speed: 0.2560s/iter; left time: 13898.8548s
+	iters: 800, epoch: 6 | loss: 0.1083141
+	speed: 0.2565s/iter; left time: 13900.2410s
+	iters: 900, epoch: 6 | loss: 0.1502253
+	speed: 0.2571s/iter; left time: 13910.7750s
+	iters: 1000, epoch: 6 | loss: 0.1140476
+	speed: 0.2575s/iter; left time: 13906.5853s
+	iters: 1100, epoch: 6 | loss: 0.1408315
+	speed: 0.2579s/iter; left time: 13903.0005s
+	iters: 1200, epoch: 6 | loss: 0.1493371
+	speed: 0.2576s/iter; left time: 13860.2600s
+	iters: 1300, epoch: 6 | loss: 0.1306681
+	speed: 0.2575s/iter; left time: 13827.3831s
+	iters: 1400, epoch: 6 | loss: 0.1603902
+	speed: 0.2576s/iter; left time: 13806.1078s
+	iters: 1500, epoch: 6 | loss: 0.1341598
+	speed: 0.2561s/iter; left time: 13703.7620s
+	iters: 1600, epoch: 6 | loss: 0.1377784
+	speed: 0.2566s/iter; left time: 13701.5817s
+	iters: 1700, epoch: 6 | loss: 0.1208337
+	speed: 0.2576s/iter; left time: 13728.6650s
+	iters: 1800, epoch: 6 | loss: 0.1323023
+	speed: 0.2579s/iter; left time: 13721.7321s
+	iters: 1900, epoch: 6 | loss: 0.1195244
+	speed: 0.2581s/iter; left time: 13707.7360s
+	iters: 2000, epoch: 6 | loss: 0.1399741
+	speed: 0.2582s/iter; left time: 13684.6243s
+	iters: 2100, epoch: 6 | loss: 0.1247741
+	speed: 0.2576s/iter; left time: 13628.7334s
+	iters: 2200, epoch: 6 | loss: 0.1475402
+	speed: 0.2577s/iter; left time: 13609.4455s
+Epoch: 6 cost time: 566.7985050678253
+Epoch: 6, Steps: 2200 | Train Loss: 0.1437725 Vali Loss: 0.1300211 Test Loss: 0.1390418
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 9.999999991149452e-05
+	iters: 100, epoch: 7 | loss: 0.1163135
+	speed: 1.4129s/iter; left time: 74459.9183s
+	iters: 200, epoch: 7 | loss: 0.1494225
+	speed: 0.2576s/iter; left time: 13550.7200s
+	iters: 300, epoch: 7 | loss: 0.1255585
+	speed: 0.2581s/iter; left time: 13552.6710s
+	iters: 400, epoch: 7 | loss: 0.1119955
+	speed: 0.2580s/iter; left time: 13521.1536s
+	iters: 500, epoch: 7 | loss: 0.1679542
+	speed: 0.2573s/iter; left time: 13459.4171s
+	iters: 600, epoch: 7 | loss: 0.1223405
+	speed: 0.2572s/iter; left time: 13427.3038s
+	iters: 700, epoch: 7 | loss: 0.1755429
+	speed: 0.2565s/iter; left time: 13364.8664s
+	iters: 800, epoch: 7 | loss: 0.1453703
+	speed: 0.2560s/iter; left time: 13313.8152s
+	iters: 900, epoch: 7 | loss: 0.1633990
+	speed: 0.2569s/iter; left time: 13333.2837s
+	iters: 1000, epoch: 7 | loss: 0.1456396
+	speed: 0.2576s/iter; left time: 13342.5273s
+	iters: 1100, epoch: 7 | loss: 0.1692732
+	speed: 0.2579s/iter; left time: 13333.8216s
+	iters: 1200, epoch: 7 | loss: 0.1171261
+	speed: 0.2577s/iter; left time: 13298.7140s
+	iters: 1300, epoch: 7 | loss: 0.1290968
+	speed: 0.2584s/iter; left time: 13305.5512s
+	iters: 1400, epoch: 7 | loss: 0.1341277
+	speed: 0.2577s/iter; left time: 13244.0192s
+	iters: 1500, epoch: 7 | loss: 0.1595031
+	speed: 0.2577s/iter; left time: 13222.7156s
+	iters: 1600, epoch: 7 | loss: 0.1462382
+	speed: 0.2575s/iter; left time: 13186.7796s
+	iters: 1700, epoch: 7 | loss: 0.1282903
+	speed: 0.2578s/iter; left time: 13172.3888s
+	iters: 1800, epoch: 7 | loss: 0.1103610
+	speed: 0.2576s/iter; left time: 13140.0709s
+	iters: 1900, epoch: 7 | loss: 0.1317108
+	speed: 0.2580s/iter; left time: 13134.6578s
+	iters: 2000, epoch: 7 | loss: 0.1622242
+	speed: 0.2574s/iter; left time: 13074.8979s
+	iters: 2100, epoch: 7 | loss: 0.1615534
+	speed: 0.2564s/iter; left time: 13000.7591s
+	iters: 2200, epoch: 7 | loss: 0.1100629
+	speed: 0.2560s/iter; left time: 12952.4970s
+Epoch: 7 cost time: 567.1368753910065
+Epoch: 7, Steps: 2200 | Train Loss: 0.1409284 Vali Loss: 0.1293751 Test Loss: 0.1360621
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 9.957185637900962e-05
+	iters: 100, epoch: 8 | loss: 0.1511846
+	speed: 1.3989s/iter; left time: 70645.6643s
+	iters: 200, epoch: 8 | loss: 0.1394975
+	speed: 0.2598s/iter; left time: 13096.6314s
+	iters: 300, epoch: 8 | loss: 0.1376783
+	speed: 0.2566s/iter; left time: 12906.1634s
+	iters: 400, epoch: 8 | loss: 0.1224848
+	speed: 0.2564s/iter; left time: 12871.1477s
+	iters: 500, epoch: 8 | loss: 0.1492897
+	speed: 0.2562s/iter; left time: 12835.8663s
+	iters: 600, epoch: 8 | loss: 0.1394397
+	speed: 0.2576s/iter; left time: 12881.9207s
+	iters: 700, epoch: 8 | loss: 0.1721441
+	speed: 0.2573s/iter; left time: 12840.8280s
+	iters: 800, epoch: 8 | loss: 0.1550155
+	speed: 0.2582s/iter; left time: 12860.4812s
+	iters: 900, epoch: 8 | loss: 0.1194251
+	speed: 0.2571s/iter; left time: 12780.2279s
+	iters: 1000, epoch: 8 | loss: 0.1558516
+	speed: 0.2582s/iter; left time: 12808.2024s
+	iters: 1100, epoch: 8 | loss: 0.1114577
+	speed: 0.2579s/iter; left time: 12764.5513s
+	iters: 1200, epoch: 8 | loss: 0.1215235
+	speed: 0.2580s/iter; left time: 12743.1146s
+	iters: 1300, epoch: 8 | loss: 0.1391583
+	speed: 0.2578s/iter; left time: 12711.9281s
+	iters: 1400, epoch: 8 | loss: 0.1390319
+	speed: 0.2576s/iter; left time: 12672.3987s
+	iters: 1500, epoch: 8 | loss: 0.1131684
+	speed: 0.2581s/iter; left time: 12674.6378s
+	iters: 1600, epoch: 8 | loss: 0.1995205
+	speed: 0.2583s/iter; left time: 12657.0495s
+	iters: 1700, epoch: 8 | loss: 0.0999602
+	speed: 0.2583s/iter; left time: 12632.5203s
+	iters: 1800, epoch: 8 | loss: 0.1346970
+	speed: 0.2581s/iter; left time: 12594.4003s
+	iters: 1900, epoch: 8 | loss: 0.1380053
+	speed: 0.2578s/iter; left time: 12554.7540s
+	iters: 2000, epoch: 8 | loss: 0.1281237
+	speed: 0.2581s/iter; left time: 12543.1691s
+	iters: 2100, epoch: 8 | loss: 0.1466896
+	speed: 0.2582s/iter; left time: 12520.8854s
+	iters: 2200, epoch: 8 | loss: 0.1347229
+	speed: 0.2572s/iter; left time: 12447.0573s
+Epoch: 8 cost time: 568.0355384349823
+Epoch: 8, Steps: 2200 | Train Loss: 0.1368505 Vali Loss: 0.2278773 Test Loss: 0.1463465
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 9.829552806202021e-05
+	iters: 100, epoch: 9 | loss: 0.1474248
+	speed: 1.4348s/iter; left time: 69303.3013s
+	iters: 200, epoch: 9 | loss: 0.1396149
+	speed: 0.2582s/iter; left time: 12443.5064s
+	iters: 300, epoch: 9 | loss: 0.1318608
+	speed: 0.2581s/iter; left time: 12416.8539s
+	iters: 400, epoch: 9 | loss: 0.1256884
+	speed: 0.2582s/iter; left time: 12395.8519s
+	iters: 500, epoch: 9 | loss: 0.1104455
+	speed: 0.2577s/iter; left time: 12343.4031s
+	iters: 600, epoch: 9 | loss: 0.1491619
+	speed: 0.2559s/iter; left time: 12232.0270s
+	iters: 700, epoch: 9 | loss: 0.1233183
+	speed: 0.2565s/iter; left time: 12234.8718s
+	iters: 800, epoch: 9 | loss: 0.1168836
+	speed: 0.2564s/iter; left time: 12206.5436s
+	iters: 900, epoch: 9 | loss: 0.1248259
+	speed: 0.2558s/iter; left time: 12150.3828s
+	iters: 1000, epoch: 9 | loss: 0.1030846
+	speed: 0.2568s/iter; left time: 12172.6684s
+	iters: 1100, epoch: 9 | loss: 0.1717731
+	speed: 0.2561s/iter; left time: 12115.6336s
+	iters: 1200, epoch: 9 | loss: 0.1049207
+	speed: 0.2564s/iter; left time: 12100.0741s
+	iters: 1300, epoch: 9 | loss: 0.1208932
+	speed: 0.2569s/iter; left time: 12098.9325s
+	iters: 1400, epoch: 9 | loss: 0.1238354
+	speed: 0.2579s/iter; left time: 12120.5303s
+	iters: 1500, epoch: 9 | loss: 0.1403343
+	speed: 0.2576s/iter; left time: 12082.5370s
+	iters: 1600, epoch: 9 | loss: 0.1771604
+	speed: 0.2584s/iter; left time: 12094.7306s
+	iters: 1700, epoch: 9 | loss: 0.1243252
+	speed: 0.2577s/iter; left time: 12034.1263s
+	iters: 1800, epoch: 9 | loss: 0.1339403
+	speed: 0.2580s/iter; left time: 12022.9760s
+	iters: 1900, epoch: 9 | loss: 0.1750030
+	speed: 0.2574s/iter; left time: 11968.7932s
+	iters: 2000, epoch: 9 | loss: 0.2211821
+	speed: 0.2574s/iter; left time: 11943.7576s
+	iters: 2100, epoch: 9 | loss: 0.1192826
+	speed: 0.2580s/iter; left time: 11943.4288s
+	iters: 2200, epoch: 9 | loss: 0.1257894
+	speed: 0.2571s/iter; left time: 11877.8823s
+Epoch: 9 cost time: 566.8970472812653
+Epoch: 9, Steps: 2200 | Train Loss: 0.1358175 Vali Loss: 0.1467591 Test Loss: 0.1338648
+EarlyStopping counter: 5 out of 5
+Early stopping
+>>>>>>>testing : 720_96_PatchTST_custom_ftM_sl720_ll48_pl96_dm128_nh16_el3_dl1_df256_fc1_ebtimeF_dtTrue_Exp_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 5165
+mse:0.1408144235610962, mae:0.2395770251750946, rse:0.37296444177627563

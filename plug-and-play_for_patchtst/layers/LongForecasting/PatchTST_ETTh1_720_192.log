@@ -1,0 +1,65 @@
+Args in experiment:
+Namespace(random_seed=2021, is_training=1, model_id='720_192', model='PatchTST', data='ETTh1', root_path='./dataset/', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=720, label_len=48, pred_len=192, fc_dropout=0.3, head_dropout=0.0, patch_len=16, stride=8, padding_patch='end', revin=1, affine=0, subtract_last=0, decomposition=0, kernel_size=25, individual=0, embed_type=0, enc_in=7, dec_in=7, c_out=7, d_model=16, n_heads=4, e_layers=3, d_layers=1, d_ff=128, moving_avg=25, factor=1, distil=True, dropout=0.3, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=30, batch_size=128, patience=5, learning_rate=0.0001, des='Exp', loss='mse', lradj='type3', pct_start=0.3, use_amp=False, use_gpu=True, gpu=6, use_multi_gpu=False, devices='0,1,2,3', test_flop=False)
+Use GPU: cuda:6
+[INFO] Register count_linear() for <class 'torch.nn.modules.linear.Linear'>.
+[INFO] Register zero_ops() for <class 'torch.nn.modules.dropout.Dropout'>.
+[INFO] Register zero_ops() for <class 'torch.nn.modules.container.Sequential'>.
+[INFO] Register count_normalization() for <class 'torch.nn.modules.batchnorm.BatchNorm1d'>.
+MACs: 12015360.0
+Params: 293120.0
+12.02M MACs
+>>>>>>>start training : 720_192_PatchTST_ETTh1_ftM_sl720_ll48_pl192_dm16_nh4_el3_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 7729
+val 2689
+test 2689
+Epoch: 1 cost time: 2.742844343185425
+Epoch: 1, Steps: 61 | Train Loss: 0.8287731 Vali Loss: 1.5470105 Test Loss: 0.7956667
+Validation loss decreased (inf --> 1.547011).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 2 cost time: 2.6374475955963135
+Epoch: 2, Steps: 61 | Train Loss: 0.6086537 Vali Loss: 1.1867778 Test Loss: 0.4797338
+Validation loss decreased (1.547011 --> 1.186778).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 3 cost time: 2.69602108001709
+Epoch: 3, Steps: 61 | Train Loss: 0.4968753 Vali Loss: 1.0311350 Test Loss: 0.4492111
+Validation loss decreased (1.186778 --> 1.031135).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 4 cost time: 2.610480546951294
+Epoch: 4, Steps: 61 | Train Loss: 0.4551920 Vali Loss: 0.9639309 Test Loss: 0.4318648
+Validation loss decreased (1.031135 --> 0.963931).  Saving model ...
+Updating learning rate to 9e-05
+Epoch: 5 cost time: 2.5998098850250244
+Epoch: 5, Steps: 61 | Train Loss: 0.4342213 Vali Loss: 0.9433334 Test Loss: 0.4228328
+Validation loss decreased (0.963931 --> 0.943333).  Saving model ...
+Updating learning rate to 8.1e-05
+Epoch: 6 cost time: 2.505528688430786
+Epoch: 6, Steps: 61 | Train Loss: 0.4229907 Vali Loss: 1.0031264 Test Loss: 0.4198054
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 7.290000000000001e-05
+Epoch: 7 cost time: 2.4393606185913086
+Epoch: 7, Steps: 61 | Train Loss: 0.4161644 Vali Loss: 0.9417331 Test Loss: 0.4171019
+Validation loss decreased (0.943333 --> 0.941733).  Saving model ...
+Updating learning rate to 6.561e-05
+Epoch: 8 cost time: 2.5095906257629395
+Epoch: 8, Steps: 61 | Train Loss: 0.4110423 Vali Loss: 0.9536459 Test Loss: 0.4160027
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 5.904900000000001e-05
+Epoch: 9 cost time: 3.2683980464935303
+Epoch: 9, Steps: 61 | Train Loss: 0.4072597 Vali Loss: 1.0131280 Test Loss: 0.4161936
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 5.3144100000000005e-05
+Epoch: 10 cost time: 2.5996904373168945
+Epoch: 10, Steps: 61 | Train Loss: 0.4044123 Vali Loss: 0.9737514 Test Loss: 0.4164153
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 4.782969000000001e-05
+Epoch: 11 cost time: 2.7933762073516846
+Epoch: 11, Steps: 61 | Train Loss: 0.4029674 Vali Loss: 1.0092831 Test Loss: 0.4168741
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 4.304672100000001e-05
+Epoch: 12 cost time: 2.8052978515625
+Epoch: 12, Steps: 61 | Train Loss: 0.3999165 Vali Loss: 0.9748527 Test Loss: 0.4165183
+EarlyStopping counter: 5 out of 5
+Early stopping
+>>>>>>>testing : 720_192_PatchTST_ETTh1_ftM_sl720_ll48_pl192_dm16_nh4_el3_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2689
+mse:0.4132126271724701, mae:0.4308091700077057, rse:0.6104416251182556

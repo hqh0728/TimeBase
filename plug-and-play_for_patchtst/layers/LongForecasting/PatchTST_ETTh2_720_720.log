@@ -1,0 +1,61 @@
+Args in experiment:
+Namespace(random_seed=2021, is_training=1, model_id='720_720', model='PatchTST', data='ETTh2', root_path='./dataset/', data_path='ETTh2.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=720, label_len=48, pred_len=720, fc_dropout=0.3, head_dropout=0.0, patch_len=16, stride=8, padding_patch='end', revin=1, affine=0, subtract_last=0, decomposition=0, kernel_size=25, individual=0, embed_type=0, enc_in=7, dec_in=7, c_out=7, d_model=16, n_heads=4, e_layers=3, d_layers=1, d_ff=128, moving_avg=25, factor=1, distil=True, dropout=0.3, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=30, batch_size=128, patience=5, learning_rate=0.0001, des='Exp', loss='mse', lradj='type3', pct_start=0.3, use_amp=False, use_gpu=True, gpu=6, use_multi_gpu=False, devices='0,1,2,3', test_flop=False)
+Use GPU: cuda:6
+[INFO] Register count_linear() for <class 'torch.nn.modules.linear.Linear'>.
+[INFO] Register zero_ops() for <class 'torch.nn.modules.dropout.Dropout'>.
+[INFO] Register zero_ops() for <class 'torch.nn.modules.container.Sequential'>.
+[INFO] Register count_normalization() for <class 'torch.nn.modules.batchnorm.BatchNorm1d'>.
+MACs: 17337600.0
+Params: 1053968.0
+17.34M MACs
+>>>>>>>start training : 720_720_PatchTST_ETTh2_ftM_sl720_ll48_pl720_dm16_nh4_el3_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 7201
+val 2161
+test 2161
+Epoch: 1 cost time: 3.898517370223999
+Epoch: 1, Steps: 57 | Train Loss: 1.0637838 Vali Loss: 0.8276331 Test Loss: 0.4628400
+Validation loss decreased (inf --> 0.827633).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 2 cost time: 3.8896303176879883
+Epoch: 2, Steps: 57 | Train Loss: 0.9510231 Vali Loss: 0.6738222 Test Loss: 0.4124975
+Validation loss decreased (0.827633 --> 0.673822).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 3 cost time: 4.135620832443237
+Epoch: 3, Steps: 57 | Train Loss: 0.8801023 Vali Loss: 0.6496247 Test Loss: 0.4006856
+Validation loss decreased (0.673822 --> 0.649625).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 4 cost time: 3.741917610168457
+Epoch: 4, Steps: 57 | Train Loss: 0.8495493 Vali Loss: 0.6368602 Test Loss: 0.3963754
+Validation loss decreased (0.649625 --> 0.636860).  Saving model ...
+Updating learning rate to 9e-05
+Epoch: 5 cost time: 3.195444107055664
+Epoch: 5, Steps: 57 | Train Loss: 0.8295537 Vali Loss: 0.6293558 Test Loss: 0.3946864
+Validation loss decreased (0.636860 --> 0.629356).  Saving model ...
+Updating learning rate to 8.1e-05
+Epoch: 6 cost time: 3.3274083137512207
+Epoch: 6, Steps: 57 | Train Loss: 0.8138707 Vali Loss: 0.6218086 Test Loss: 0.3958263
+Validation loss decreased (0.629356 --> 0.621809).  Saving model ...
+Updating learning rate to 7.290000000000001e-05
+Epoch: 7 cost time: 4.478637933731079
+Epoch: 7, Steps: 57 | Train Loss: 0.8033801 Vali Loss: 0.6222922 Test Loss: 0.3954463
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 6.561e-05
+Epoch: 8 cost time: 3.4566078186035156
+Epoch: 8, Steps: 57 | Train Loss: 0.7872131 Vali Loss: 0.6247756 Test Loss: 0.3934731
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 5.904900000000001e-05
+Epoch: 9 cost time: 3.8920979499816895
+Epoch: 9, Steps: 57 | Train Loss: 0.7814630 Vali Loss: 0.6249045 Test Loss: 0.3936466
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 5.3144100000000005e-05
+Epoch: 10 cost time: 4.215689420700073
+Epoch: 10, Steps: 57 | Train Loss: 0.7718101 Vali Loss: 0.6251321 Test Loss: 0.3928655
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 4.782969000000001e-05
+Epoch: 11 cost time: 4.057223558425903
+Epoch: 11, Steps: 57 | Train Loss: 0.7672943 Vali Loss: 0.6264013 Test Loss: 0.3925719
+EarlyStopping counter: 5 out of 5
+Early stopping
+>>>>>>>testing : 720_720_PatchTST_ETTh2_ftM_sl720_ll48_pl720_dm16_nh4_el3_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2161
+mse:0.39464831352233887, mae:0.43443363904953003, rse:0.5021238923072815
